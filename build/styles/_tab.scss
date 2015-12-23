@@ -1,0 +1,42 @@
+.tab {
+  border: 1px solid $line-color;
+  border-radius: 2px;
+  .header {
+    background: white;
+    margin-bottom: -1px;
+    ul {
+      display: flex;
+      display: -webkit-flex;
+      display: box;
+      display: -webkit-box;
+      li {
+        border-bottom: 1px solid $line-color;
+        box-flex: 1;
+        box-sizing: border-box;
+        cursor: pointer;
+        flex: 1;
+        list-style: none;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        text-align: center;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+
+        & + li {
+          border-left: 1px solid $line-color;
+        }
+
+        &.selected {
+          background: $primary-color;
+          border-bottom: 1px solid $primary-color;
+          color: $font-color;
+        }
+      }
+    }
+  }
+  .content {
+    & > .item {
+      display: none;
+    }
+  }
+}

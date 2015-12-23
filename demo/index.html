@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>X-UI Demo</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" type="text/css" href="../src/x-ui.css">
+</head>
+
+<body>
+  <header id="header">
+    <h2>X-UI<small style="margin-left: 20px;">基于<a href="http://www.cvtouch.com" target="_blank" style="color: white; text-decoration: underline; margin: auto 5px;">CVTOUCH</a>的前端组件</small></h2>
+  </header>
+  <section id="container">
+    <aside id="side-nav">
+      <ul class="nav">
+        <h4>CSS 组件</h4>
+        <li><a href="#topbar">Topbar</a></li>
+        <li><a href="#sidebar">Sidebar</a></li>
+        <li><a href="#link">Link</a></li>
+        <li><a href="#button">Button</a></li>
+        <li><a href="#list">List</a></li>
+        <li><a href="#card">Card</a></li>
+        <li><a href="#panel">Panel</a></li>
+        <li><a href="#input">Input</a></li>
+      </ul>
+      <hr class="mgt5">
+      <ul class="nav">
+        <h4>JS 组件</h4>
+        <li><a href="#radio-button">Radio Button</a></li>
+        <li><a href="#radio-block">Radio Block</a></li>
+        <li><a href="#checkbox-button">Checkbox Button</a></li>
+        <li><a href="#tab">Tab</a></li>
+        <li><a href="#carousel">Carousel</a></li>
+        <li><a href="#spinner">Spinner</a></li>
+        <li><a href="#popup">Popup</a></li>
+      </ul>
+    </aside>
+    <section id="main-section">
+      <section id="topbar">
+        <h2>Topbar</h2>
+        <div class="topbar">
+          <a class="link link-primary pull-left" href="#topbar">Left</a>
+          <a class="link link-primary pull-right" href="#topbar">Right</a>
+          <h3 class="title">Title</h3>
+        </div>
+        <pre>&lt;div class=&quot;topbar&quot;&gt;
+  &lt;a class=&quot;link link-primary pull-left&quot; href=&quot;#topbar&quot;&gt;Left&lt;/a&gt;
+  &lt;a class=&quot;link link-primary pull-right&quot; href=&quot;#topbar&quot;&gt;Right&lt;/a&gt;
+  &lt;h3 class=&quot;title&quot;&gt;Title&lt;/h3&gt;
+&lt;/div&gt;</pre>
+      </section>
+      <section id="sidebar">
+        <h2>Sidebar</h2>
+        <div class="sidebar">
+          <div class="tool">
+            <a class="link link-default" href="#sidebar">
+              I
+            </a>
+          </div>
+          <div class="tool dot mgt1">
+            <a class="link link-default" href="#sidebar">
+              I
+            </a>
+          </div>
+        </div>
+        <pre>&lt;div class=&quot;sidebar&quot;&gt;
+  &lt;div class=&quot;tool&quot;&gt;
+    &lt;a class=&quot;link link-default&quot; href=&quot;#sidebar&quot;&gt;I&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tool dot mgt1&quot;&gt;
+    &lt;a class=&quot;link link-default&quot; href=&quot;#sidebar&quot;&gt;I&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+      </section>
+      <section id="link">
+        <h2>Link</h2>
+        <a class="link link-primary" href="#link">class="link link-primary"</a>
+        <pre>&lt;a class=&quot;link link-primary&quot; href=&quot;#link&quot;&gt;class=&quot;link link-primary&quot;&lt;/a&gt;</pre>
+        <hr class="spacer">
+        <a class="link link-warning" href="#link">class="link link-warning"</a>
+        <pre>&lt;a class=&quot;link link-warning&quot; href=&quot;#link&quot;&gt;class=&quot;link link-warning&quot;&lt;/a&gt;</pre>
+        <hr class="spacer">
+        <a class="link link-default" href="#link">class="link link-default"</a>
+        <pre>&lt;a class=&quot;link link-default&quot; href=&quot;#link&quot;&gt;class=&quot;link link-default&quot;&lt;/a&gt;</pre>
+      </section>
+      <section id="button">
+        <h2>Button</h2>
+        <button class="btn btn-primary">class="btn btn-primary"</button>
+        <pre>&lt;button class=&quot;btn btn-primary&quot;&gt;class=&quot;btn btn-primary&quot;&lt;/button&gt;</pre>
+        <hr class="spacer">
+        <button class="btn btn-warning">class="btn btn-warning"</button>
+        <pre>&lt;button class=&quot;btn btn-warning&quot;&gt;class=&quot;btn btn-warning&quot;&lt;/button&gt;</pre>
+        <hr class="spacer">
+        <button class="btn btn-default">class="btn btn-default"</button>
+        <pre>&lt;button class=&quot;btn btn-default&quot;&gt;class=&quot;btn btn-default&quot;&lt;/button&gt;</pre>
+        <hr class="spacer">
+        <button class="btn btn-default disabled">class="btn btn-default disabled"</button>
+        <pre>&lt;button class=&quot;btn btn-default disabled&quot;&gt;class=&quot;btn btn-default disabled&quot;&lt;/button&gt;</pre>
+        <h2 class="mgt5">Link Button</h2>
+        <a class="btn btn-primary" href="#button">class="btn btn-parimary"</a>
+        <pre>&lt;a class=&quot;btn btn-primary&quot; href=&quot;#button&quot;&gt;class=&quot;btn btn-primary&quot;&lt;/a&gt;</pre>
+        <hr class="spacer">
+        <a class="btn btn-warning" href="#button">class="btn btn-warning"</a>
+        <pre>&lt;a class=&quot;btn btn-warning&quot; href=&quot;#button&quot;&gt;class=&quot;btn btn-warning&quot;&lt;/a&gt;</pre>
+        <hr class="spacer">
+        <a class="btn btn-default" href="#button">class="btn btn-default"</a>
+        <pre>&lt;a class=&quot;btn btn-default&quot; href=&quot;#button&quot;&gt;class=&quot;btn btn-default&quot;&lt;/a&gt;</pre>
+        <hr class="spacer">
+        <button class="btn btn-default disabled">class="btn btn-default disabled"</button>
+        <pre>&lt;a class=&quot;btn btn-default disabled&quot; href=&quot;#button&quot;&gt;class=&quot;btn btn-default disabled&quot;&lt;/a&gt;</pre>
+      </section>
+      <section id="list">
+        <h2>List</h2>
+        <ul class="list">
+          <li class="item">
+            <a class="link link-default" href="#list">
+              <img src="x-ui.png">
+              <div class="content">
+                <h3>List item</h3>
+                <p>list item example</p>
+              </div>
+            </a>
+          </li>
+          <li class="item">
+            <a class="link link-default" href="#list">
+              <img src="x-ui.png">
+              <div class="content">
+                <h3>List item</h3>
+                <p>list item example</p>
+              </div>
+            </a>
+          </li>
+          <li class="item">
+            <a class="link link-default" href="#list">
+              <img src="x-ui.png">
+              <div class="content">
+                <h3>List item</h3>
+                <p>list item example</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <pre>&lt;ul class=&quot;list&quot;&gt;
+  &lt;li class=&quot;item&quot;&gt;
+    &lt;a class=&quot;link link-default&quot; href=&quot;#list&quot;&gt;
+      &lt;img src=&quot;x-ui.png&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+        &lt;h3&gt;List item&lt;/h3&gt;
+        &lt;p&gt;list item example&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;item&quot;&gt;
+    &lt;a class=&quot;link link-default&quot; href=&quot;#list&quot;&gt;
+      &lt;img src=&quot;x-ui.png&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+        &lt;h3&gt;List item&lt;/h3&gt;
+        &lt;p&gt;list item example&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;item&quot;&gt;
+    &lt;a class=&quot;link link-default&quot; href=&quot;#list&quot;&gt;
+      &lt;img src=&quot;x-ui.png&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+        &lt;h3&gt;List item&lt;/h3&gt;
+        &lt;p&gt;list item example&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</pre>
+      </section>
+      <section id="card">
+        <h2>Card</h2>
+        <ul class="card w-33">
+          <li class="item w-50">
+            <a class="link link-default" href="#card">
+              <img src="x-ui.png">
+              <div class="content">
+                <h3>Card item</h3>
+                <p>card item example</p>
+              </div>
+            </a>
+          </li>
+          <li class="item w-50">
+            <a class="link link-default" href="#card">
+              <img src="x-ui.png">
+              <div class="content">
+                <h3>Card item</h3>
+                <p>card item example</p>
+              </div>
+            </a>
+          </li>
+          <li class="item w-100">
+            <a class="link link-default" href="#card">
+              <img src="x-ui.png">
+              <div class="content">
+                <h3>Card item</h3>
+                <p>card item example</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <pre>&lt;ul class=&quot;card w-33&quot;&gt;
+  &lt;li class=&quot;item w-50&quot;&gt;
+    &lt;a class=&quot;link link-default&quot; href=&quot;#card&quot;&gt;
+      &lt;img src=&quot;x-ui.png&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+        &lt;h3&gt;Card item&lt;/h3&gt;
+        &lt;p&gt;card item example&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;item w-50&quot;&gt;
+    &lt;a class=&quot;link link-default&quot; href=&quot;#card&quot;&gt;
+      &lt;img src=&quot;x-ui.png&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+        &lt;h3&gt;Card item&lt;/h3&gt;
+        &lt;p&gt;card item example&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;item w-100&quot;&gt;
+    &lt;a class=&quot;link link-default&quot; href=&quot;#card&quot;&gt;
+      &lt;img src=&quot;x-ui.png&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+        &lt;h3&gt;Card item&lt;/h3&gt;
+        &lt;p&gt;card item example&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</pre>
+      </section>
+      <section id="panel">
+        <h2>Panel</h2>
+        <div class="panel">
+          <div class="header">
+            <h3>Panel</h3>
+            <div class="actions">
+              <a class="link link-primary" href="#panel">action</a>
+              <a class="link link-primary" href="#panel">action</a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>Content</h3>
+            <p>Panel Content Example</p>
+            <p>Panel Content Example</p>
+            <p>Panel Content Example</p>
+          </div>
+          <div class="actions">
+            <a class="btn btn-primary" href="#panel">action</a>
+            <a class="btn btn-warning" href="#panel">action</a>
+          </div>
+        </div>
+        <pre>&lt;div class=&quot;panel&quot;&gt;
+  &lt;div class=&quot;header&quot;&gt;
+    &lt;h3&gt;Panel&lt;/h3&gt;
+    &lt;div class=&quot;actions&quot;&gt;
+      &lt;a class=&quot;link link-primary&quot; href=&quot;#panel&quot;&gt;action&lt;/a&gt;
+      &lt;a class=&quot;link link-primary&quot; href=&quot;#panel&quot;&gt;action&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;h3&gt;Content&lt;/h3&gt;
+    &lt;p&gt;Panel Content Example&lt;/p&gt;
+    &lt;p&gt;Panel Content Example&lt;/p&gt;
+    &lt;p&gt;Panel Content Example&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;actions&quot;&gt;
+    &lt;a class=&quot;btn btn-primary&quot; href=&quot;#panel&quot;&gt;action&lt;/a&gt;
+    &lt;a class=&quot;btn btn-warning&quot; href=&quot;#panel&quot;&gt;action&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+      </section>
+      <section id="input">
+        <h2>Input</h2>
+        <input class="input w-33 db mgt1" type="text">
+        <input class="input w-33 db mgt1" type="password">
+        <textarea class="input w-33 db mgt1"></textarea>
+        <pre>&lt;input class=&quot;input w-33&quot; type=&quot;text&quot;&gt;
+&lt;input class=&quot;input w-33&quot; type=&quot;password&quot;&gt;
+&lt;textarea class=&quot;input w-33&quot;&gt;&lt;/textarea&gt;</pre>
+      </section>
+      <section id="radio-button">
+        <h2>Radio Button</h2>
+        <label class="radio-btn">
+          <input name="radio-btn" type="radio" value="radio-btn-1" checked="checked">
+          <span class="checked">radio-btn 1</span>
+        </label>
+        <label class="radio-btn">
+          <input name="radio-btn" type="radio" value="radio-btn-2">
+          <span>radio-btn 2</span>
+        </label>
+        <label class="radio-btn">
+          <input name="radio-btn" type="radio" value="radio-btn-3">
+          <span>radio-btn 3</span>
+        </label>
+        <pre>&lt;label class=&quot;radio-btn&quot;&gt;
+  &lt;input name=&quot;radio-btn&quot; type=&quot;radio&quot; value=&quot;radio-btn-1&quot;&gt;
+  &lt;span class=&quot;checked&quot;&gt;radio-btn 1&lt;/span&gt;
+&lt;/label&gt;
+&lt;label class=&quot;radio-btn&quot;&gt;
+  &lt;input name=&quot;radio-btn&quot; type=&quot;radio&quot; value=&quot;radio-btn-2&quot;&gt;
+  &lt;span&gt;radio-btn 2&lt;/span&gt;
+&lt;/label&gt;
+&lt;label class=&quot;radio-btn&quot;&gt;
+  &lt;input name=&quot;radio-btn&quot; type=&quot;radio&quot; value=&quot;radio-btn-3&quot;&gt;
+  &lt;span&gt;radio-btn 3&lt;/span&gt;
+&lt;/label&gt;</pre>
+      </section>
+      <section id="radio-block">
+        <h2>Radio Block</h2>
+        <label class="radio-block">
+          <input name="radio-block" type="radio" value="radio-block-1" checked="checked">
+          <span class="checked title">radio-block 1</span>
+          <span>radio-block 1 example</span>
+          <span class="actions">
+            <a class="link link-primary" href="#radio-block">Edit</a>
+            <a class="link link-primary" href="#radio-block">Delete</a>
+          </span>
+        </label>
+        <hr class="spacer">
+        <label class="radio-block">
+          <input name="radio-block" type="radio" value="radio-block-2">
+          <span class="title">radio-block 2</span>
+          <span>radio-block 2 example</span>
+          <span class="actions">
+            <a class="link link-primary" href="#radio-block">Edit</a>
+            <a class="link link-primary" href="#radio-block">Delete</a>
+          </span>
+        </label>
+        <hr class="spacer">
+        <label class="radio-block">
+          <input name="radio-block" type="radio" value="radio-block-3">
+          <span class="title">radio-block 3</span>
+          <span>radio-block 3 example</span>
+          <span class="actions">
+            <a class="link link-primary" href="#radio-block">Edit</a>
+            <a class="link link-primary" href="#radio-block">Delete</a>
+          </span>
+        </label>
+        <pre>&lt;label class=&quot;radio-block&quot;&gt;
+  &lt;input name=&quot;radio-block&quot; type=&quot;radio&quot; value=&quot;radio-block-1&quot; checked=&quot;checked&quot;&gt;
+  &lt;span class=&quot;checked title&quot;&gt;radio-block 1&lt;/span&gt;
+  &lt;span&gt;radio-block 1 example&lt;/span&gt;
+  &lt;span class=&quot;actions&quot;&gt;
+    &lt;a class=&quot;link link-primary&quot; href=&quot;#radio-block&quot;&gt;Edit&lt;/a&gt;
+    &lt;a class=&quot;link link-primary&quot; href=&quot;#radio-block&quot;&gt;Delete&lt;/a&gt;
+  &lt;/span&gt;
+&lt;/label&gt;
+&lt;label class=&quot;radio-block&quot;&gt;
+  &lt;input name=&quot;radio-block&quot; type=&quot;radio&quot; value=&quot;radio-block-2&quot;&gt;
+  &lt;span class=&quot;title&quot;&gt;radio-block 2&lt;/span&gt;
+  &lt;span&gt;radio-block 2 example&lt;/span&gt;
+  &lt;span class=&quot;actions&quot;&gt;
+    &lt;a class=&quot;link link-primary&quot; href=&quot;#radio-block&quot;&gt;Edit&lt;/a&gt;
+    &lt;a class=&quot;link link-primary&quot; href=&quot;#radio-block&quot;&gt;Delete&lt;/a&gt;
+  &lt;/span&gt;
+&lt;/label&gt;
+&lt;label class=&quot;radio-block&quot;&gt;
+  &lt;input name=&quot;radio-block&quot; type=&quot;radio&quot; value=&quot;radio-block-3&quot;&gt;
+  &lt;span class=&quot;title&quot;&gt;radio-block 3&lt;/span&gt;
+  &lt;span&gt;radio-block 3 example&lt;/span&gt;
+  &lt;span class=&quot;actions&quot;&gt;
+    &lt;a class=&quot;link link-primary&quot; href=&quot;#radio-block&quot;&gt;Edit&lt;/a&gt;
+    &lt;a class=&quot;link link-primary&quot; href=&quot;#radio-block&quot;&gt;Delete&lt;/a&gt;
+  &lt;/span&gt;
+&lt;/label&gt;</pre>
+      </section>
+      <section id="checkbox-button">
+        <h2>Checkbox Button</h2>
+        <label class="check-btn">
+          <input name="check-btn" type="checkbox" value="check-btn-1" checked="checked">
+          <span class="checked">check-btn 1</span>
+        </label>
+        <label class="check-btn">
+          <input name="check-btn" type="checkbox" value="check-btn-2">
+          <span>check-btn 2</span>
+        </label>
+        <label class="check-btn">
+          <input name="check-btn" type="checkbox" value="check-btn-3">
+          <span>check-btn 3</span>
+        </label>
+        <pre>&lt;label class=&quot;check-btn&quot;&gt;
+  &lt;input name=&quot;check-btn&quot; type=&quot;checkbox&quot; value=&quot;check-btn-1&quot; checked=&quot;checked&quot;&gt;
+  &lt;span class=&quot;checked&quot;&gt;check-btn 1&lt;/span&gt;
+&lt;/label&gt;
+&lt;label class=&quot;check-btn&quot;&gt;
+  &lt;input name=&quot;check-btn&quot; type=&quot;checkbox&quot; value=&quot;check-btn-2&quot;&gt;
+  &lt;span&gt;check-btn 2&lt;/span&gt;
+&lt;/label&gt;
+&lt;label class=&quot;check-btn&quot;&gt;
+  &lt;input name=&quot;check-btn&quot; type=&quot;checkbox&quot; value=&quot;check-btn-3&quot;&gt;
+  &lt;span&gt;check-btn 3&lt;/span&gt;
+&lt;/label&gt;</pre>
+      </section>
+      <section id="tab">
+        <h2>Tap</h2>
+        <div class="tab">
+          <div class="header">
+            <ul>
+              <li class="selected" data-href="tab1">概述</li>
+              <li data-href="tab2">参数</li>
+              <li data-href="tab3">配件</li>
+            </ul>
+          </div>
+          <div class="content">
+            <div id="tab1" class="item">
+              <h1>Tab1 - 1</h1>
+            </div>
+            <div id="tab2" class="item">
+              <h1>Tab2 - 2</h1>
+            </div>
+            <div id="tab3" class="item">
+              <h1>Tab3 - 3</h1>
+            </div>
+          </div>
+        </div>
+        <pre>&lt;div class=&quot;tab&quot;&gt;
+  &lt;div class=&quot;header&quot;&gt;
+    &lt;ul&gt;
+      &lt;li class=&quot;selected&quot; data-href=&quot;tab1&quot;&gt;概述&lt;/li&gt;
+      &lt;li data-href=&quot;tab2&quot;&gt;参数&lt;/li&gt;
+      &lt;li data-href=&quot;tab3&quot;&gt;配件&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;div id=&quot;tab1&quot; class=&quot;item&quot;&gt;
+      &lt;h1&gt;Tab1 - 1&lt;/h1&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;tab2&quot; class=&quot;item&quot;&gt;
+      &lt;h1&gt;Tab2 - 2&lt;/h1&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;tab3&quot; class=&quot;item&quot;&gt;
+      &lt;h1&gt;Tab3 - 3&lt;/h1&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+      </section>
+      <section id="carousel">
+        <h2>Carousel</h2>
+        <h3>PC: 
+          <a class="link link-warning" href="http://blog.0xfc.cn/2015/08/11/carousel/" target="_blank">DEMO</a>
+          <a class="link link-primary" href="https://github.com/feichao/wan-carousel" target="_blank">Github</a>
+        </h3>
+        <h3>Mobile: 
+          <a class="link link-primary" href="https://github.com/feichao/zepto-carousel" target="_blank">Github</a>
+        </h3>
+      </section>
+
+      <section id="spinner">
+        <h2>Spinner</h2>
+        <h3>PC: 
+          <a class="link link-warning" href="http://blog.0xfc.cn/2015/08/09/spinner/" target="_blank">DEMO</a>
+          <a class="link link-primary" href="https://github.com/feichao/wan-spinner" target="_blank">Github</a>
+        </h3>
+      </section>
+
+      <section id="popup">
+        <h2>Popup</h2>
+        <h3>Mobile: 
+          <a class="link link-primary" href="https://github.com/feichao/zepto-popup" target="_blank">Github</a>
+        </h3>
+      </section>
+    </section>
+  </section>
+  <script type="text/javascript" src="jquery-1.11.3.js"></script>
+  <script type="text/javascript" src="zepto.js"></script>
+  <script type="text/javascript" src="../src/x-ui.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>

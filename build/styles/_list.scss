@@ -1,0 +1,20 @@
+.list {
+  border: 1px solid #f0f0f0;
+  border-radius: 2px;
+  border-top: none;
+  margin: 0;
+  padding: 0;
+	.item {
+		border-top: 1px solid #f0f0f0;
+		list-style: none;
+		overflow: hidden;
+		img {
+			float: left;
+			height: 80px;
+			width: 80px;
+		}
+		.content {
+			margin-left: 90px;
+		}
+	}
+}

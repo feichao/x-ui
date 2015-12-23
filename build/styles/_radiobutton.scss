@@ -1,0 +1,25 @@
+label.radio-btn {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  input {
+    margin-left: -99999px;
+    position: absolute;
+  }
+  input[checked] {
+    span.checked {
+      background-color: $primary-color;
+      color: $font-color;
+    }
+  }
+  span {
+    border: 1px solid $line-color;
+    border-radius: 2px;
+    display: block;
+    padding: 10px 15px;
+    &.checked {
+      background-color: $primary-color;
+      color: $font-color;
+    }
+  }
+}

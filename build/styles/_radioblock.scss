@@ -1,0 +1,44 @@
+label.radio-block {
+  cursor: pointer;
+  display: block;
+  input {
+    margin-left: -99999px;
+    position: absolute;
+  }
+  span {
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  span.title {
+    border: 1px solid $line-color;
+    border-radius: 2px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 120px;
+  }
+  span.title.checked {
+    border: 1px solid $warning-color-hover;
+    &:before,
+    &:after {
+      border: 5px solid transparent;
+      content: '';
+      height: 0;
+      position: absolute;
+      width: 0;
+    }
+    &:before {
+      border-color: transparent transparent $warning-color-hover $warning-color-hover;
+      bottom: 0;
+      left: 0;
+    }
+    &:after {
+      border-color: $warning-color-hover $warning-color-hover transparent transparent;
+      right: 0;
+      top: 0;
+    }
+  }
+  span.actions {
+    float: right;
+  }
+}

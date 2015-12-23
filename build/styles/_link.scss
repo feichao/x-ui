@@ -1,0 +1,24 @@
+a.link {
+  text-decoration: none;
+
+  &.link-default {
+    color: $font-grey-color;
+    &:hover {
+      color: $font-grey-color-hover;
+    }
+  }
+
+  &.link-primary {
+    color: $primary-color;
+    &:hover {
+      color: $primary-color-hover;
+    }
+  }
+
+  &.link-warning {
+    color: $warning-color;
+    &:hover {
+      color: $warning-color-hover;
+    }
+  }
+}

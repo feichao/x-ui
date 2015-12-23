@@ -1,0 +1,55 @@
+$primary-color: #003284;
+$primary-color-hover: #001E7B;
+
+$warning-color: #dd514c;
+$warning-color-hover: #c62b26;
+
+$default-color: #e6e6e6;
+$default-color-hover: #c7c7c7;
+
+$line-color: #f0f0f0;
+$font-color: #ffffff;
+$font-grey-color: #333333;
+$font-grey-color-hover: #111111;
+
+@import "base";
+@import "button";
+@import "radiobutton";
+@import "link";
+@import "topbar";
+@import "sidebar";
+@import "list";
+@import "card";
+@import "panel";
+@import "input";
+@import "radioblock";
+@import "checkbutton";
+@import "tab";
+
+.db {
+	display: block;
+}
+
+.pull-left {
+	float: left !important;
+}
+
+.pull-right {
+	float: right !important;
+}
+
+.w-25 {
+	width: 25% !important;
+}
+
+.w-33 {
+	width: 33% !important;
+}
+
+.w-50 {
+	width: 50% !important;
+}
+
+.w-100 {
+	width: 100% !important;
+}

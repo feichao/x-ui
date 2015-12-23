@@ -1,0 +1,26 @@
+.sidebar {
+	text-align: center;
+	.tool {
+		background: rgba(0,0,0,.35);
+    border-radius: 50%;
+    box-sizing: border-box;
+    height: 40px;
+    padding: 10px;
+    position: relative;
+    width: 40px;
+
+    &.dot:after {
+	    background: rgba(255,0,0,.7);
+	    border-radius: 50%;
+	    content: ' ';
+	    color: #fff;
+	    height: 10px;
+	    position: absolute;
+	    right: 5px;
+	    transition: all .3s;
+	    -webkit-transition: all .3s;
+	    top: 0;
+	    width: 10px;
+    }
+	}
+}

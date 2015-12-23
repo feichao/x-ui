@@ -1,0 +1,17 @@
+{
+  "name": "X-UI",
+  "version": "0.0.1",
+  "description": "X-UI, CSS components & JS components, based on cvtouch.com",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Frank",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-clean": "^0.3.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-minify-css": "^1.2.0",
+    "gulp-sass": "^2.0.4"
+  }
+}

@@ -1,0 +1,26 @@
+.panel {
+  border: 1px solid $line-color;
+  border-radius: 2px;
+  overflow: hidden;
+  .header {
+    border-bottom: 1px solid $line-color;
+    padding: 15px;
+    h2,
+    h3,
+    h4 {
+      display: inline-block;
+      margin: 0;
+    }
+    .actions {
+      float: right;
+      margin: 0;
+    }
+  }
+  .content {
+    padding: 0 15px;
+  }
+  .actions {
+    float: right;
+    margin: 15px;
+  }
+}

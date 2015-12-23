@@ -1,0 +1,42 @@
+.btn {
+  border-radius: 2px;
+  color: $font-color;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 17px;
+  margin: 0;
+  padding: 10px 25px;
+  &.btn-default {
+    background-color: $default-color;
+    color: $font-grey-color;
+    &:hover {
+      background-color: $default-color-hover;
+    }
+  }
+  &.btn-primary {
+    background-color: $primary-color;
+    &:hover {
+      background-color: $primary-color-hover;
+    }
+  }
+  &.btn-warning {
+    background-color: $warning-color;
+    &:hover {
+      background-color: $warning-color-hover;
+    }
+  }
+  &.disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}
+
+a.btn {
+  @extend .btn;
+  text-decoration: none;
+}
+
+button.btn {
+  @extend .btn;
+  border: none;
+}
